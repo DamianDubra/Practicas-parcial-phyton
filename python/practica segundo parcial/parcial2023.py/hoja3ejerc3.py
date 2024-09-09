@@ -9,7 +9,7 @@ vedad=[0]*velemen
 p=1
 
 for c in range(0,velemen):
-    vlegajo[c]=input('legajo')
+    vlegajo[c]=input('legajo: ')
     vape[c]=input('apellido: ')
     vedad[c]=input('edad: ')
 

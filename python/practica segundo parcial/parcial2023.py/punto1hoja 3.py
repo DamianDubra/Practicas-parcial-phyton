@@ -3,15 +3,19 @@
 
 def ConvFrase(pVectorFra:list[str]):
     velementos=len(pVectorFra)
+    auxi=['']*velementos
     for c in range(0, velementos):
         p=pVectorFra[c]
+        fraseauxi=''
         for d in range(0,len(p)):
             h=p[d]
             i=ord(h)
             if i>=65 and i<=95:
-                p[d]=chr(i+32)
-                pVectorFra[c]=p[d]
-    return pVectorFra
+                fraseauxi+=chr(i+32)
+            else:
+                fraseauxi+=h
+        auxi[c]=fraseauxi
+    return auxi
 velemnetos=int(input('cantidad'))
 dg=['']*velemnetos
 for c in range(0,velemnetos):
